@@ -10,7 +10,7 @@ describe(@"A simple test", ^{
         // failures in action.
 		
         id anArray = [NSArray arrayWithObject:@"Foo"];
-        [[anArray shouldNot] contain:@"Foo"];
+        [[anArray should] contain:@"Foo"];
         [[anArray shouldNot] contain:@"Bar"];
 		
         [[theValue(42) should] beGreaterThan:theValue(10.0f)];
